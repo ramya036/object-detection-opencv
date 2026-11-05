@@ -12,6 +12,14 @@ Detects and labels everyday objects (people, cars, animals, cups and 76 other CO
 | `samples/cat.jpg` | ![Cat detected with 72% confidence](samples/cat_detected.jpg) |
 | `samples/coffee.jpg` | ![Cup detected with 82% confidence](samples/coffee_detected.jpg) |
 
+## Features
+
+- Detects **80 kinds of objects** (people, vehicles, animals, food, furniture and more) with confidence scores
+- Works on **image files and live webcam video**, in real time on a laptop CPU
+- **Command-line tool** that shows, saves or prints detections as JSON, with an adjustable confidence threshold
+- **Reusable `ObjectDetector` class** for your own code
+- Correct COCO label mapping, checked by tests
+
 ## How it works
 
 1. Loads the frozen TensorFlow graph and its config into `cv2.dnn_DetectionModel`.
@@ -40,7 +48,7 @@ Example JSON output:
 ]
 ```
 
-## Use it in your own code
+**Use it in your own code**
 
 ```python
 import cv2
@@ -62,7 +70,7 @@ pytest
 
 The tests check the label mapping, that the model finds the cat and the cup in the sample images, that a blank image gives no detections, threshold and sorting behaviour, drawing, and the command-line options. GitHub Actions runs them on every push.
 
-## Files
+## Project structure
 
 | File | Description |
 |---|---|
