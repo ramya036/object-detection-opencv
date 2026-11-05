@@ -13,12 +13,9 @@ Detects and labels everyday objects (people, cars, dogs, cups and 76 other COCO 
 
 ## Results
 
-**Image input**
+![Detections on a street scene: cars, a bus, people and a bicycle](https://github.com/user-attachments/assets/77826d02-d01c-4e37-b276-245aaa77fd75)
 
-![Detections on a still image](https://github.com/user-attachments/assets/77826d02-d01c-4e37-b276-245aaa77fd75)
-
-**Live video**
-
+The same detection runs frame by frame on live webcam video (`python code.py`).
 
 ## Run it
 
